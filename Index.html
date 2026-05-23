@@ -13,7 +13,6 @@
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -28,6 +27,7 @@
     body {
       background: #f8fafc;
       color: #1e293b;
+      overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
     }
 
     /* ================= NAVBAR ================= */
@@ -82,6 +82,18 @@
 
     .nav-links a:hover {
       color: #2563eb;
+    }
+
+    
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: #334155;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1002;
+      transition: 0.3s;
     }
 
     /* ================= HERO ================= */
@@ -390,7 +402,6 @@
     /* ================= RESPONSIVE ================= */
 
     @media(max-width:900px) {
-
       .hero {
         flex-direction: column-reverse;
         text-align: center;
@@ -409,18 +420,34 @@
       }
     }
 
-    @media(max-width:600px) {
-
-      .navbar {
-        flex-direction: column;
-        gap: 15px;
+    @media(max-width:768px) {
+      .menu-toggle {
+        display: block; 
       }
 
       .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Keeps panel hidden initially off-screen */
+        width: 280px;
+        height: 100vh;
+        background: white;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 100px 40px;
+        gap: 40px;
+        transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1001;
       }
 
+      .nav-links.active {
+        right: 0;
+      }
+    }
+
+    @media(max-width:600px) {
       .hero-text h1 {
         font-size: 38px;
       }
@@ -441,7 +468,12 @@
 
     <div class="logo">Chaitanya.</div>
 
-    <div class="nav-links">
+    <!-- Hamburger Icon Button -->
+    <button class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -478,8 +510,7 @@
     </div>
 
     <div class="hero-image">
-      <img src="./Images/my-pic.jpeg"
-        alt="Frontend Development">
+      <img src="./Images/my-pic.jpeg" alt="Frontend Development">
     </div>
 
   </section>
@@ -496,8 +527,7 @@
     <div class="about-container">
 
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
-          alt="Web Development">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Web Development">
       </div>
 
       <div class="about-content">
@@ -577,8 +607,7 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop"
-          alt="Fruits Landing Page">
+        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop" alt="Fruits Landing Page">
 
         <div class="project-content">
 
@@ -601,8 +630,7 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop"
-          alt="Plants Website">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Plants Website">
 
         <div class="project-content">
 
@@ -625,8 +653,7 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
-          alt="Task Management Dashboard">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop" alt="Task Management Dashboard">
 
         <div class="project-content">
 
@@ -703,6 +730,33 @@
     </p>
 
   </footer>
+
+  <!-- ================= SIDE PANEL SCRIPT ================= -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const toggleIcon = menuToggle.querySelector('i');
+
+    // 1. Toggle Side Panel & Switch between Bars/Times icons on button click
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      if (navLinks.classList.contains('active')) {
+        toggleIcon.classList.replace('fa-bars', 'fa-xmark');
+      } else {
+        toggleIcon.classList.replace('fa-xmark', 'fa-bars');
+      }
+    });
+
+    // 2. Automatically close side panel when a navigation link is clicked
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        toggleIcon.classList.replace('fa-xmark', 'fa-bars');
+      });
+    });
+  </script>
 
 </body>
 
