@@ -13,7 +13,8 @@
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     * {
@@ -27,13 +28,14 @@
     body {
       background: #f8fafc;
       color: #1e293b;
-      overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+      overflow-x: hidden;
     }
 
     a {
       text-decoration: none;
       color: inherit;
     }
+
     /* ================= NAVBAR ================= */
 
     .navbar {
@@ -62,7 +64,6 @@
     }
 
     .nav-links a {
-      text-decoration: none;
       color: #334155;
       font-weight: 500;
       position: relative;
@@ -88,7 +89,6 @@
       color: #2563eb;
     }
 
-    
     .menu-toggle {
       display: none;
       font-size: 24px;
@@ -146,7 +146,6 @@
     .btn {
       padding: 14px 28px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: 500;
       transition: 0.3s;
       display: inline-block;
@@ -313,7 +312,6 @@
 
     .project-content a {
       color: #2563eb;
-      text-decoration: none;
       font-weight: 600;
     }
 
@@ -393,7 +391,6 @@
       color: #2563eb;
       border-radius: 50%;
       margin: 0 8px;
-      text-decoration: none;
       transition: 0.3s;
     }
 
@@ -426,13 +423,13 @@
 
     @media(max-width:768px) {
       .menu-toggle {
-        display: block; 
+        display: block;
       }
 
       .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* Keeps panel hidden initially off-screen */
+        right: -100%;
         width: 280px;
         height: 100vh;
         background: white;
@@ -472,7 +469,6 @@
 
     <div class="logo">Chaitanya.</div>
 
-    <!-- Hamburger Icon Button -->
     <button class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </button>
@@ -531,7 +527,9 @@
     <div class="about-container">
 
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Web Development">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+          alt="Web Development">
       </div>
 
       <div class="about-content">
@@ -611,15 +609,18 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop" alt="Fruits Landing Page">
+        <img
+          src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop"
+          alt="Fruits Landing Page">
 
         <div class="project-content">
 
           <h3>Fruits Landing Page</h3>
 
           <p>
-            Responsive fruits landing page with clean layout,
-            modern design and attractive user interface.
+            Responsive fruits landing page built using HTML, CSS
+            and JavaScript featuring clean layout, modern UI,
+            smooth responsiveness and attractive design sections.
           </p>
 
           <a href="https://fruits-landing-practice-webpages.vercel.app/" target="_blank">
@@ -634,15 +635,18 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Plants Website">
+        <img
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop"
+          alt="Plants Website">
 
         <div class="project-content">
 
           <h3>Plants Portfolio Website</h3>
 
           <p>
-            Modern plants themed responsive website with elegant
-            sections and professional UI design.
+            Modern plants themed responsive website developed using
+            HTML, CSS and JavaScript with elegant sections,
+            animations and professional UI design.
           </p>
 
           <a href="https://plantsportfolio-website.vercel.app/" target="_blank">
@@ -657,18 +661,47 @@
 
       <div class="project-card">
 
-        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop" alt="Task Management Dashboard">
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
+          alt="Task Management Dashboard">
 
         <div class="project-content">
 
           <h3>Task Management Dashboard</h3>
 
           <p>
-            Responsive task management dashboard with clean UI,
-            task organization features and modern frontend design.
+            Responsive task management dashboard created using
+            ReactJS, CSS and JavaScript featuring task organization,
+            clean UI components and modern frontend design.
           </p>
 
           <a href="https://user-task-management-dashboard.vercel.app/" target="_blank">
+            View Project →
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PROJECT 4 -->
+
+      <div class="project-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+          alt="AI Resume Analyzer">
+
+        <div class="project-content">
+
+          <h3>AI Resume Analyzer</h3>
+
+          <p>
+            AI-powered resume analyzer built using ReactJS,
+            JavaScript, Tailwind CSS and AI integration to analyze
+            resumes, improve ATS score and provide smart feedback.
+          </p>
+
+          <a href="https://ai-resume-analyzer-two-chi.vercel.app/" target="_blank">
             View Project →
           </a>
 
@@ -721,9 +754,11 @@
 
       <a href="https://wa.me/919350349962" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-      <a href="https://www.instagram.com/_random.click01_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/_random.click01_/" target="_blank"><i
+          class="fab fa-instagram"></i></a>
 
-      <a href="https://www.linkedin.com/in/chaitanya-pratap-narayan-83a42a411/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/chaitanya-pratap-narayan-83a42a411/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
 
       <a href="https://github.com/cpn-singh" target="_blank"><i class="fab fa-github"></i></a>
 
@@ -736,15 +771,15 @@
   </footer>
 
   <!-- ================= SIDE PANEL SCRIPT ================= -->
+
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
     const toggleIcon = menuToggle.querySelector('i');
 
-    // 1. Toggle Side Panel & Switch between Bars/Times icons on button click
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
-      
+
       if (navLinks.classList.contains('active')) {
         toggleIcon.classList.replace('fa-bars', 'fa-xmark');
       } else {
@@ -752,8 +787,8 @@
       }
     });
 
-    // 2. Automatically close side panel when a navigation link is clicked
     const links = navLinks.querySelectorAll('a');
+
     links.forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
