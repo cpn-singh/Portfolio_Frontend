@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 3000,
     open: false,
-    allowedHosts:[
-      "interlobate-isidro-palmately.ngrok-free.dev"
-    ]
+    // allowedHosts:[
+    //   "interlobate-isidro-palmately.ngrok-free.dev"
+    // ]
   }
 });
