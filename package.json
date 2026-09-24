@@ -1,0 +1,33 @@
+{
+  "name": "chaitanya-portfolio-award-grade",
+  "version": "2.0.0",
+  "description": "Award-Winning Live Video Portfolio for Chaitanya Pratap Narayan - Frontend Developer & UI Craftsman",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend-developer",
+    "react",
+    "awwwards",
+    "creative-development",
+    "webgl",
+    "interactive-video"
+  ],
+  "author": "Chaitanya Pratap Narayan",
+  "license": "MIT",
+  "dependencies": {
+    "lenis": "^1.3.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
+  },
+  "type": "module"
+}
