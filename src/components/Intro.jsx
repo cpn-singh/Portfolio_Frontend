@@ -1,5 +1,5 @@
 import React from 'react';
-
+import img from "../../assets/images/my-pic.jpeg";
 export default function Intro() {
   return (
     <section id="intro" className="pd-intro-section">
@@ -59,7 +59,7 @@ export default function Intro() {
         <div className="intro-portrait-column">
           <div className="portrait-showcase-frame">
             <img
-              src="/assets/images/my-pic.jpeg"
+              src={img}
               alt="Chaitanya Pratap Narayan — Python Full Stack & Frontend Developer"
               className="portrait-showcase-img"
             />

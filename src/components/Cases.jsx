@@ -3,6 +3,14 @@ import StarIcon from './StarIcon';
 import LiveReelPreview from './LiveReelPreview';
 import LiveProjectModal from './LiveProjectModal';
 
+// Imported PNG preview assets
+import ulearnezImg from '../../assets/images/live-preview-ulearnez.png';
+import youtubeImg from '../../assets/images/live-preview-youtube.png';
+import taskImg from '../../assets/images/live-preview-task.png';
+import plantsImg from '../../assets/images/live-preview-plants.png';
+import fruitsImg from '../../assets/images/live-preview-fruits.png';
+import ultronImg from '../../assets/images/live-preview-ultron.png';
+
 export default function Cases() {
   const [selectedCaseModal, setSelectedCaseModal] = useState(null);
 
@@ -14,7 +22,7 @@ export default function Cases() {
       category: 'EDTECH PLATFORM, UX/UI, REACT & NEXT.JS',
       desc: 'An interactive online learning and skill-building web application featuring dynamic course catalogs, structured video lectures, and student analytics dashboards.',
       tags: ['Next.js', 'ReactJS', 'Tailwind CSS', 'Vercel', 'UI/UX'],
-      image: '/assets/images/live-preview-ulearnez.png',
+      image: ulearnezImg,
       liveUrl: 'https://u-learnez.vercel.app/',
       githubUrl: 'https://github.com/cpn-singh',
       layout: 'left-text' // Col 1: Text, Col 2: Live Reel
@@ -26,7 +34,7 @@ export default function Cases() {
       category: 'UX/UI DESIGN, DEVELOPMENT',
       desc: 'A bespoke streaming web application featuring responsive sidebar navigation, category feeds, and dynamic cinema mode.',
       tags: ['ReactJS', 'Vite', 'Tailwind CSS', 'REST API'],
-      image: '/assets/images/live-preview-youtube.png',
+      image: youtubeImg,
       liveUrl: 'https://youtube-clone-psi-henna.vercel.app/',
       githubUrl: 'https://github.com/cpn-singh/Youtube-landing-page',
       layout: 'left-image' // Col 1: Live Reel, Col 2: Text
@@ -38,7 +46,7 @@ export default function Cases() {
       category: 'STATE ARCHITECTURE, KANBAN UI',
       desc: 'A sleek productivity command center with kanban-inspired task lifecycle management, status indicators, and responsive multi-column layouts.',
       tags: ['ReactJS', 'JavaScript', 'CSS Modules', 'State Architecture'],
-      image: '/assets/images/live-preview-task.png',
+      image: taskImg,
       liveUrl: 'https://user-task-management-dashboard.vercel.app/',
       githubUrl: 'https://github.com/cpn-singh/User-Task-Management-Dashboard',
       layout: 'left-text' // Col 1: Text, Col 2: Live Reel
@@ -50,7 +58,7 @@ export default function Cases() {
       category: 'BRANDING, UI DESIGN, DEVELOPMENT',
       desc: 'A botanic-themed modern responsive web platform designed with organic typography, fluid micro-interactions, and earthy minimalism.',
       tags: ['HTML5', 'Modern CSS', 'JavaScript', 'Micro-Animations'],
-      image: '/assets/images/live-preview-plants.png',
+      image: plantsImg,
       liveUrl: 'https://plantsportfolio-website.vercel.app/',
       githubUrl: 'https://github.com/cpn-singh/Plants-Portfolio-Website',
       layout: 'left-image' // Col 1: Live Reel, Col 2: Text
@@ -62,7 +70,7 @@ export default function Cases() {
       category: 'INTERACTION DESIGN, DEVELOPMENT',
       desc: 'High-energy kinetic promotional landing page blending bold color rhythm, 3D card perspectives, and fluid cross-device responsiveness.',
       tags: ['HTML5', 'CSS3 Animations', 'JavaScript', 'Kinetic UI'],
-      image: '/assets/images/live-preview-fruits.png',
+      image: fruitsImg,
       liveUrl: 'https://fruits-landing-practice-webpages.vercel.app/',
       githubUrl: 'https://github.com/cpn-singh/fruits-landing-practice-webpages',
       layout: 'left-text' // Col 1: Text, Col 2: Live Reel
@@ -74,7 +82,7 @@ export default function Cases() {
       category: 'AI, UX/UI DESIGN, DEVELOPMENT',
       desc: 'An immersive AI-inspired web experience featuring a futuristic digital brain interface, interactive visual elements, and a cinematic user experience designed around intelligent technology.',
       tags: ['ReactJS', 'Vite', 'Tailwind CSS', 'JavaScript'],
-      image: '/assets/images/live-preview-ultron.png',
+      image: ultronImg,
       liveUrl: 'https://ultron-living-ai-brain.vercel.app/',
       githubUrl: '#',
       layout: 'left-image'
