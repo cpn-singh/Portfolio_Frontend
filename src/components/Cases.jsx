@@ -10,6 +10,7 @@ import taskImg from '../../assets/images/live-preview-task.png';
 import plantsImg from '../../assets/images/live-preview-plants.png';
 import fruitsImg from '../../assets/images/live-preview-fruits.png';
 import ultronImg from '../../assets/images/live-preview-ultron.png';
+import lmsImg from '../../assets/images/library_preview.png';
 
 export default function Cases() {
   const [selectedCaseModal, setSelectedCaseModal] = useState(null);
@@ -85,6 +86,18 @@ export default function Cases() {
       image: ultronImg,
       liveUrl: 'https://ultron-living-ai-brain.vercel.app/',
       githubUrl: '#',
+      layout: 'left-image'
+    },
+    {
+      id: 'lms',
+      number: '07',
+      title: 'Live Library Management System',
+      category: 'AI, UX/UI DESIGN, Django-DRF',
+      desc: 'A modern library management platform featuring intuitive book organization, member management, and loan tracking, designed to streamline library operations through a seamless and user-friendly digital experience.',
+      tags: ['Django', 'DRF', 'Tailwind CSS', 'JavaScript'],
+      image: lmsImg,
+      liveUrl: 'https://librarymanagementsystem-cyan.vercel.app/',
+      githubUrl: 'https://github.com/cpn-singh/Library-Management-System',
       layout: 'left-image'
     }
   ];
